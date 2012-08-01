@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060735F015C8E3E2001D00F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060735EF15C8E3E2001D00F7 /* Cocoa.framework */; };
+		060735FA15C8E3E2001D00F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 060735F815C8E3E2001D00F7 /* InfoPlist.strings */; };
+		060735FC15C8E3E2001D00F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 060735FB15C8E3E2001D00F7 /* main.m */; };
+		0607360315C8E3E2001D00F7 /* PSMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607360215C8E3E2001D00F7 /* PSMAppDelegate.m */; };
+		0607360615C8E3E2001D00F7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0607360415C8E3E2001D00F7 /* MainMenu.xib */; };
+		0607362915C8E492001D00F7 /* NSBezierPath_AMShading.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607360E15C8E492001D00F7 /* NSBezierPath_AMShading.m */; };
+		0607362A15C8E492001D00F7 /* NSString_AITruncation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607361015C8E492001D00F7 /* NSString_AITruncation.m */; };
+		0607362B15C8E492001D00F7 /* PSMMetalTabStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607361215C8E492001D00F7 /* PSMMetalTabStyle.m */; };
+		0607362C15C8E492001D00F7 /* PSMOverflowPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607361415C8E492001D00F7 /* PSMOverflowPopUpButton.m */; };
+		0607362D15C8E492001D00F7 /* PSMProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607361615C8E492001D00F7 /* PSMProgressIndicator.m */; };
+		0607362E15C8E492001D00F7 /* PSMRolloverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607361815C8E492001D00F7 /* PSMRolloverButton.m */; };
+		0607362F15C8E492001D00F7 /* PSMTabBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607361A15C8E492001D00F7 /* PSMTabBarCell.m */; };
+		0607363015C8E492001D00F7 /* PSMTabBarControl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0607361B15C8E492001D00F7 /* PSMTabBarControl.bundle */; };
+		0607363115C8E492001D00F7 /* PSMTabBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607361D15C8E492001D00F7 /* PSMTabBarControl.m */; };
+		0607363215C8E492001D00F7 /* PSMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607361F15C8E492001D00F7 /* PSMTabBarController.m */; };
+		0607363315C8E492001D00F7 /* PSMTabDragAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607362115C8E492001D00F7 /* PSMTabDragAssistant.m */; };
+		0607363415C8E492001D00F7 /* PSMTabDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607362315C8E492001D00F7 /* PSMTabDragView.m */; };
+		0607363515C8E492001D00F7 /* PSMTabDragWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607362515C8E492001D00F7 /* PSMTabDragWindow.m */; };
+		0607363615C8E492001D00F7 /* PSMTabDragWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607362715C8E492001D00F7 /* PSMTabDragWindowController.m */; };
+		0607363A15C8E4B7001D00F7 /* PSMMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607363815C8E4B7001D00F7 /* PSMMainWindowController.m */; };
+		0607363B15C8E4B7001D00F7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0607363915C8E4B7001D00F7 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		060735EB15C8E3E2001D00F7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		060735EF15C8E3E2001D00F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		060735F215C8E3E2001D00F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		060735F315C8E3E2001D00F7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		060735F415C8E3E2001D00F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		060735F715C8E3E2001D00F7 /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
+		060735F915C8E3E2001D00F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		060735FB15C8E3E2001D00F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		060735FD15C8E3E2001D00F7 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		0607360115C8E3E2001D00F7 /* PSMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSMAppDelegate.h; sourceTree = "<group>"; };
+		0607360215C8E3E2001D00F7 /* PSMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSMAppDelegate.m; sourceTree = "<group>"; };
+		0607360515C8E3E2001D00F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0607360D15C8E492001D00F7 /* NSBezierPath_AMShading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBezierPath_AMShading.h; sourceTree = "<group>"; };
+		0607360E15C8E492001D00F7 /* NSBezierPath_AMShading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBezierPath_AMShading.m; sourceTree = "<group>"; };
+		0607360F15C8E492001D00F7 /* NSString_AITruncation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_AITruncation.h; sourceTree = "<group>"; };
+		0607361015C8E492001D00F7 /* NSString_AITruncation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_AITruncation.m; sourceTree = "<group>"; };
+		0607361115C8E492001D00F7 /* PSMMetalTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMMetalTabStyle.h; sourceTree = "<group>"; };
+		0607361215C8E492001D00F7 /* PSMMetalTabStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMMetalTabStyle.m; sourceTree = "<group>"; };
+		0607361315C8E492001D00F7 /* PSMOverflowPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMOverflowPopUpButton.h; sourceTree = "<group>"; };
+		0607361415C8E492001D00F7 /* PSMOverflowPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMOverflowPopUpButton.m; sourceTree = "<group>"; };
+		0607361515C8E492001D00F7 /* PSMProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMProgressIndicator.h; sourceTree = "<group>"; };
+		0607361615C8E492001D00F7 /* PSMProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMProgressIndicator.m; sourceTree = "<group>"; };
+		0607361715C8E492001D00F7 /* PSMRolloverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMRolloverButton.h; sourceTree = "<group>"; };
+		0607361815C8E492001D00F7 /* PSMRolloverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMRolloverButton.m; sourceTree = "<group>"; };
+		0607361915C8E492001D00F7 /* PSMTabBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMTabBarCell.h; sourceTree = "<group>"; };
+		0607361A15C8E492001D00F7 /* PSMTabBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMTabBarCell.m; sourceTree = "<group>"; };
+		0607361B15C8E492001D00F7 /* PSMTabBarControl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PSMTabBarControl.bundle; sourceTree = "<group>"; };
+		0607361C15C8E492001D00F7 /* PSMTabBarControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMTabBarControl.h; sourceTree = "<group>"; };
+		0607361D15C8E492001D00F7 /* PSMTabBarControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMTabBarControl.m; sourceTree = "<group>"; };
+		0607361E15C8E492001D00F7 /* PSMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMTabBarController.h; sourceTree = "<group>"; };
+		0607361F15C8E492001D00F7 /* PSMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMTabBarController.m; sourceTree = "<group>"; };
+		0607362015C8E492001D00F7 /* PSMTabDragAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMTabDragAssistant.h; sourceTree = "<group>"; };
+		0607362115C8E492001D00F7 /* PSMTabDragAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMTabDragAssistant.m; sourceTree = "<group>"; };
+		0607362215C8E492001D00F7 /* PSMTabDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMTabDragView.h; sourceTree = "<group>"; };
+		0607362315C8E492001D00F7 /* PSMTabDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMTabDragView.m; sourceTree = "<group>"; };
+		0607362415C8E492001D00F7 /* PSMTabDragWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMTabDragWindow.h; sourceTree = "<group>"; };
+		0607362515C8E492001D00F7 /* PSMTabDragWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMTabDragWindow.m; sourceTree = "<group>"; };
+		0607362615C8E492001D00F7 /* PSMTabDragWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMTabDragWindowController.h; sourceTree = "<group>"; };
+		0607362715C8E492001D00F7 /* PSMTabDragWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMTabDragWindowController.m; sourceTree = "<group>"; };
+		0607362815C8E492001D00F7 /* PSMTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMTabStyle.h; sourceTree = "<group>"; };
+		0607363715C8E4B7001D00F7 /* PSMMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMMainWindowController.h; sourceTree = "<group>"; };
+		0607363815C8E4B7001D00F7 /* PSMMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMMainWindowController.m; sourceTree = "<group>"; };
+		0607363915C8E4B7001D00F7 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		060735E815C8E3E2001D00F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060735F015C8E3E2001D00F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		060735E015C8E3E2001D00F7 = {
+			isa = PBXGroup;
+			children = (
+				060735F515C8E3E2001D00F7 /* Demo */,
+				0607360C15C8E492001D00F7 /* PSMTabBarControl */,
+				060735EE15C8E3E2001D00F7 /* Frameworks */,
+				060735EC15C8E3E2001D00F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		060735EC15C8E3E2001D00F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				060735EB15C8E3E2001D00F7 /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		060735EE15C8E3E2001D00F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				060735EF15C8E3E2001D00F7 /* Cocoa.framework */,
+				060735F115C8E3E2001D00F7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		060735F115C8E3E2001D00F7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				060735F215C8E3E2001D00F7 /* AppKit.framework */,
+				060735F315C8E3E2001D00F7 /* CoreData.framework */,
+				060735F415C8E3E2001D00F7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		060735F515C8E3E2001D00F7 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				0607360415C8E3E2001D00F7 /* MainMenu.xib */,
+				0607360115C8E3E2001D00F7 /* PSMAppDelegate.h */,
+				0607360215C8E3E2001D00F7 /* PSMAppDelegate.m */,
+				0607363715C8E4B7001D00F7 /* PSMMainWindowController.h */,
+				0607363815C8E4B7001D00F7 /* PSMMainWindowController.m */,
+				0607363915C8E4B7001D00F7 /* MainWindow.xib */,
+				060735F615C8E3E2001D00F7 /* Supporting Files */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		060735F615C8E3E2001D00F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				060735F715C8E3E2001D00F7 /* Demo-Info.plist */,
+				060735F815C8E3E2001D00F7 /* InfoPlist.strings */,
+				060735FB15C8E3E2001D00F7 /* main.m */,
+				060735FD15C8E3E2001D00F7 /* Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0607360C15C8E492001D00F7 /* PSMTabBarControl */ = {
+			isa = PBXGroup;
+			children = (
+				0607360D15C8E492001D00F7 /* NSBezierPath_AMShading.h */,
+				0607360E15C8E492001D00F7 /* NSBezierPath_AMShading.m */,
+				0607360F15C8E492001D00F7 /* NSString_AITruncation.h */,
+				0607361015C8E492001D00F7 /* NSString_AITruncation.m */,
+				0607361115C8E492001D00F7 /* PSMMetalTabStyle.h */,
+				0607361215C8E492001D00F7 /* PSMMetalTabStyle.m */,
+				0607361315C8E492001D00F7 /* PSMOverflowPopUpButton.h */,
+				0607361415C8E492001D00F7 /* PSMOverflowPopUpButton.m */,
+				0607361515C8E492001D00F7 /* PSMProgressIndicator.h */,
+				0607361615C8E492001D00F7 /* PSMProgressIndicator.m */,
+				0607361715C8E492001D00F7 /* PSMRolloverButton.h */,
+				0607361815C8E492001D00F7 /* PSMRolloverButton.m */,
+				0607361915C8E492001D00F7 /* PSMTabBarCell.h */,
+				0607361A15C8E492001D00F7 /* PSMTabBarCell.m */,
+				0607361B15C8E492001D00F7 /* PSMTabBarControl.bundle */,
+				0607361C15C8E492001D00F7 /* PSMTabBarControl.h */,
+				0607361D15C8E492001D00F7 /* PSMTabBarControl.m */,
+				0607361E15C8E492001D00F7 /* PSMTabBarController.h */,
+				0607361F15C8E492001D00F7 /* PSMTabBarController.m */,
+				0607362015C8E492001D00F7 /* PSMTabDragAssistant.h */,
+				0607362115C8E492001D00F7 /* PSMTabDragAssistant.m */,
+				0607362215C8E492001D00F7 /* PSMTabDragView.h */,
+				0607362315C8E492001D00F7 /* PSMTabDragView.m */,
+				0607362415C8E492001D00F7 /* PSMTabDragWindow.h */,
+				0607362515C8E492001D00F7 /* PSMTabDragWindow.m */,
+				0607362615C8E492001D00F7 /* PSMTabDragWindowController.h */,
+				0607362715C8E492001D00F7 /* PSMTabDragWindowController.m */,
+				0607362815C8E492001D00F7 /* PSMTabStyle.h */,
+			);
+			name = PSMTabBarControl;
+			path = ../PSMTabBarControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		060735EA15C8E3E2001D00F7 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0607360915C8E3E2001D00F7 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				060735E715C8E3E2001D00F7 /* Sources */,
+				060735E815C8E3E2001D00F7 /* Frameworks */,
+				060735E915C8E3E2001D00F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 060735EB15C8E3E2001D00F7 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		060735E215C8E3E2001D00F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PSM;
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 060735E515C8E3E2001D00F7 /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 060735E015C8E3E2001D00F7;
+			productRefGroup = 060735EC15C8E3E2001D00F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				060735EA15C8E3E2001D00F7 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		060735E915C8E3E2001D00F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060735FA15C8E3E2001D00F7 /* InfoPlist.strings in Resources */,
+				0607360615C8E3E2001D00F7 /* MainMenu.xib in Resources */,
+				0607363015C8E492001D00F7 /* PSMTabBarControl.bundle in Resources */,
+				0607363B15C8E4B7001D00F7 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		060735E715C8E3E2001D00F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060735FC15C8E3E2001D00F7 /* main.m in Sources */,
+				0607360315C8E3E2001D00F7 /* PSMAppDelegate.m in Sources */,
+				0607362915C8E492001D00F7 /* NSBezierPath_AMShading.m in Sources */,
+				0607362A15C8E492001D00F7 /* NSString_AITruncation.m in Sources */,
+				0607362B15C8E492001D00F7 /* PSMMetalTabStyle.m in Sources */,
+				0607362C15C8E492001D00F7 /* PSMOverflowPopUpButton.m in Sources */,
+				0607362D15C8E492001D00F7 /* PSMProgressIndicator.m in Sources */,
+				0607362E15C8E492001D00F7 /* PSMRolloverButton.m in Sources */,
+				0607362F15C8E492001D00F7 /* PSMTabBarCell.m in Sources */,
+				0607363115C8E492001D00F7 /* PSMTabBarControl.m in Sources */,
+				0607363215C8E492001D00F7 /* PSMTabBarController.m in Sources */,
+				0607363315C8E492001D00F7 /* PSMTabDragAssistant.m in Sources */,
+				0607363415C8E492001D00F7 /* PSMTabDragView.m in Sources */,
+				0607363515C8E492001D00F7 /* PSMTabDragWindow.m in Sources */,
+				0607363615C8E492001D00F7 /* PSMTabDragWindowController.m in Sources */,
+				0607363A15C8E4B7001D00F7 /* PSMMainWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		060735F815C8E3E2001D00F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				060735F915C8E3E2001D00F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0607360415C8E3E2001D00F7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0607360515C8E3E2001D00F7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0607360715C8E3E2001D00F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0607360815C8E3E2001D00F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0607360A15C8E3E2001D00F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0607360B15C8E3E2001D00F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		060735E515C8E3E2001D00F7 /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0607360715C8E3E2001D00F7 /* Debug */,
+				0607360815C8E3E2001D00F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0607360915C8E3E2001D00F7 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0607360A15C8E3E2001D00F7 /* Debug */,
+				0607360B15C8E3E2001D00F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 060735E215C8E3E2001D00F7 /* Project object */;
+}
