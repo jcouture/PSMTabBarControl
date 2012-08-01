@@ -8,6 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class PSMTabBarControl;
+
 @interface PSMMainWindowController : NSWindowController
+
+@property (weak) IBOutlet PSMTabBarControl *tabBarControl;
+@property (weak) IBOutlet NSTabView *tabView;
 
 @end
