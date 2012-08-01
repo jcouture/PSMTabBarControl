@@ -21,8 +21,8 @@
         [self setBordered:NO];
         [self setTitle:@""];
         [self setPreferredEdge:NSMaxXEdge];
-        _PSMTabBarOverflowPopUpImage = [[NSImage alloc] initByReferencingFile:[[PSMTabBarControl bundle] pathForImageResource:@"overflowImage"]];
-		_PSMTabBarOverflowDownPopUpImage = [[NSImage alloc] initByReferencingFile:[[PSMTabBarControl bundle] pathForImageResource:@"overflowImagePressed"]];
+        _PSMTabBarOverflowPopUpImage = [[NSImage alloc] initByReferencingFile:[[PSMTabBarControl bundle] pathForResource:@"PSMTabBarControl.bundle/btn_overflow" ofType:@"png"]];
+		_PSMTabBarOverflowDownPopUpImage = [[NSImage alloc] initByReferencingFile:[[PSMTabBarControl bundle] pathForResource:@"PSMTabBarControl.bundle/btn_overflow_pressed" ofType:@"png"]];
 		_animatingAlternateImage = NO;
     }
     return self;
