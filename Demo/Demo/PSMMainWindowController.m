@@ -28,6 +28,7 @@
     [self.tabBarControl setStyle:[[PSMMetalTabStyle alloc] init]];
     [self.tabBarControl setShowAddTabButton:YES];
     [self.tabBarControl setUseOverflowMenu:YES];
+    [self.tabBarControl setAllowsScrubbing:NO];
     
     [[self.tabBarControl addTabButton] setTarget:self];
     [[self.tabBarControl addTabButton] setAction:@selector(addNewTab:)];
@@ -50,13 +51,20 @@
     [self.tabView removeTabViewItem:[self.tabView selectedTabViewItem]];
 }
 
-- (NSArray *)allowedDraggedTypesForTabView:(NSTabView *)aTabView {
-	return [NSArray arrayWithObjects:NSFilenamesPboardType, NSStringPboardType, nil];
+- (BOOL)tabView:(NSTabView *)aTabView shouldDragTabViewItem:(NSTabViewItem *)tabViewItem fromTabBar:(PSMTabBarControl *)tabBarControl {
+    return YES;
 }
 
-
-- (BOOL)tabView:(NSTabView *)aTabView shouldCloseTabViewItem:(NSTabViewItem *)tabViewItem {
+- (BOOL)tabView:(NSTabView *)aTabView shouldDropTabViewItem:(NSTabViewItem *)tabViewItem inTabBar:(PSMTabBarControl *)tabBarControl {
     return YES;
+}
+
+- (BOOL)tabView:(NSTabView *)aTabView shouldAllowTabViewItem:(NSTabViewItem *)tabViewItem toLeaveTabBar:(PSMTabBarControl *)tabBarControl {
+    return YES;
+}
+
+- (void)tabView:(NSTabView*)aTabView didDropTabViewItem:(NSTabViewItem *)tabViewItem inTabBar:(PSMTabBarControl *)tabBarControl {
+    
 }
 
 
