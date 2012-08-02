@@ -29,6 +29,7 @@
 		0607363A15C8E4B7001D00F7 /* PSMMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607363815C8E4B7001D00F7 /* PSMMainWindowController.m */; };
 		0607363B15C8E4B7001D00F7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0607363915C8E4B7001D00F7 /* MainWindow.xib */; };
 		06E596D615C8F35400139EE3 /* TabInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E596D515C8F35400139EE3 /* TabInfo.m */; };
+		09EFE2D615CA2F5F002C0314 /* PSMTabContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EFE2CF15CA2E40002C0314 /* PSMTabContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,8 @@
 		0607363915C8E4B7001D00F7 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		06E596D415C8F35400139EE3 /* TabInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabInfo.h; sourceTree = "<group>"; };
 		06E596D515C8F35400139EE3 /* TabInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabInfo.m; sourceTree = "<group>"; };
+		09EFE2CE15CA2E40002C0314 /* PSMTabContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSMTabContentViewController.h; sourceTree = "<group>"; };
+		09EFE2CF15CA2E40002C0314 /* PSMTabContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSMTabContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +180,8 @@
 				0607361D15C8E492001D00F7 /* PSMTabBarControl.m */,
 				0607361E15C8E492001D00F7 /* PSMTabBarController.h */,
 				0607361F15C8E492001D00F7 /* PSMTabBarController.m */,
+				09EFE2CE15CA2E40002C0314 /* PSMTabContentViewController.h */,
+				09EFE2CF15CA2E40002C0314 /* PSMTabContentViewController.m */,
 				0607362015C8E492001D00F7 /* PSMTabDragAssistant.h */,
 				0607362115C8E492001D00F7 /* PSMTabDragAssistant.m */,
 				0607362215C8E492001D00F7 /* PSMTabDragView.h */,
@@ -267,6 +272,7 @@
 				0607362F15C8E492001D00F7 /* PSMTabBarCell.m in Sources */,
 				0607363115C8E492001D00F7 /* PSMTabBarControl.m in Sources */,
 				0607363215C8E492001D00F7 /* PSMTabBarController.m in Sources */,
+				09EFE2D615CA2F5F002C0314 /* PSMTabContentViewController.m in Sources */,
 				0607363315C8E492001D00F7 /* PSMTabDragAssistant.m in Sources */,
 				0607363415C8E492001D00F7 /* PSMTabDragView.m in Sources */,
 				0607363515C8E492001D00F7 /* PSMTabDragWindow.m in Sources */,
