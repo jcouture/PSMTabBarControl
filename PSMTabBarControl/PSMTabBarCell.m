@@ -28,9 +28,10 @@
         _cellTrackingTag = 0;
         _closeButtonOver = NO;
         _closeButtonPressed = NO;
-        _indicator = [[PSMProgressIndicator alloc] initWithFrame:NSMakeRect(0.0,0.0,kPSMTabBarIndicatorWidth,kPSMTabBarIndicatorWidth)];
+        _indicator = [[PSMProgressIndicator alloc] init];
         [_indicator setStyle:NSProgressIndicatorSpinningStyle];
         [_indicator setAutoresizingMask:NSViewMinYMargin];
+        _indicator.controlSize = NSSmallControlSize;
         _hasCloseButton = YES;
         _isCloseButtonSuppressed = NO;
         _count = 0;
