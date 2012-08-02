@@ -10,7 +10,7 @@
 #import "PSMTabBarControl.h"
 #import "PSMRolloverButton.h"
 #import "PSMMetalTabStyle.h"
-#import "TabInfo.h"
+#import "PSMAnyTabContentViewController.h"
 
 @implementation PSMMainWindowController
 
@@ -37,18 +37,15 @@
 }
 
 - (void)addNewTab:(id)sender {
-    TabInfo *tabInfo = [[TabInfo alloc] init];
+    NSTabViewItem *tabViewItem = [[NSTabViewItem alloc] init];
+
+    PSMAnyTabContentViewController* tabContentViewController = [[PSMAnyTabContentViewController alloc] initWithTabViewItem:tabViewItem];
+    tabViewItem.identifier = tabContentViewController;
     
-    NSTabViewItem *newItem = [[NSTabViewItem alloc] initWithIdentifier:tabInfo];
-    [newItem setLabel:@"Untitled"];
-    [self.tabView addTabViewItem:newItem];
-    [self.tabView selectTabViewItem:newItem];
-}
-
-
-- (IBAction)closeTab:(id)sender
-{
-    [self.tabView removeTabViewItem:[self.tabView selectedTabViewItem]];
+    tabViewItem.view = tabContentViewController.view;
+    [tabViewItem setLabel:@"Untitled"];
+    [self.tabView addTabViewItem:tabViewItem];
+    [self.tabView selectTabViewItem:tabViewItem];
 }
 
 - (BOOL)tabView:(NSTabView *)aTabView shouldDragTabViewItem:(NSTabViewItem *)tabViewItem fromTabBar:(PSMTabBarControl *)tabBarControl {

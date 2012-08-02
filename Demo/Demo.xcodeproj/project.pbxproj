@@ -30,6 +30,8 @@
 		0607363B15C8E4B7001D00F7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0607363915C8E4B7001D00F7 /* MainWindow.xib */; };
 		06E596D615C8F35400139EE3 /* TabInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E596D515C8F35400139EE3 /* TabInfo.m */; };
 		09EFE2D615CA2F5F002C0314 /* PSMTabContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EFE2CF15CA2E40002C0314 /* PSMTabContentViewController.m */; };
+		09EFE2D815CA2FA2002C0314 /* TabContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EFE2D715CA2FA2002C0314 /* TabContentView.xib */; };
+		09EFE2DB15CA2FBC002C0314 /* PSMAnyTabContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EFE2DA15CA2FA9002C0314 /* PSMAnyTabContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,9 @@
 		06E596D515C8F35400139EE3 /* TabInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabInfo.m; sourceTree = "<group>"; };
 		09EFE2CE15CA2E40002C0314 /* PSMTabContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSMTabContentViewController.h; sourceTree = "<group>"; };
 		09EFE2CF15CA2E40002C0314 /* PSMTabContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSMTabContentViewController.m; sourceTree = "<group>"; };
+		09EFE2D715CA2FA2002C0314 /* TabContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabContentView.xib; sourceTree = "<group>"; };
+		09EFE2D915CA2FA9002C0314 /* PSMAnyTabContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSMAnyTabContentViewController.h; sourceTree = "<group>"; };
+		09EFE2DA15CA2FA9002C0314 /* PSMAnyTabContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSMAnyTabContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,12 +139,15 @@
 		060735F515C8E3E2001D00F7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				09EFE2D915CA2FA9002C0314 /* PSMAnyTabContentViewController.h */,
+				09EFE2DA15CA2FA9002C0314 /* PSMAnyTabContentViewController.m */,
 				0607360415C8E3E2001D00F7 /* MainMenu.xib */,
 				0607360115C8E3E2001D00F7 /* PSMAppDelegate.h */,
 				0607360215C8E3E2001D00F7 /* PSMAppDelegate.m */,
 				0607363715C8E4B7001D00F7 /* PSMMainWindowController.h */,
 				0607363815C8E4B7001D00F7 /* PSMMainWindowController.m */,
 				0607363915C8E4B7001D00F7 /* MainWindow.xib */,
+				09EFE2D715CA2FA2002C0314 /* TabContentView.xib */,
 				06E596D415C8F35400139EE3 /* TabInfo.h */,
 				06E596D515C8F35400139EE3 /* TabInfo.m */,
 				060735F615C8E3E2001D00F7 /* Supporting Files */,
@@ -251,6 +259,7 @@
 				0607360615C8E3E2001D00F7 /* MainMenu.xib in Resources */,
 				0607363015C8E492001D00F7 /* PSMTabBarControl.bundle in Resources */,
 				0607363B15C8E4B7001D00F7 /* MainWindow.xib in Resources */,
+				09EFE2D815CA2FA2002C0314 /* TabContentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +288,7 @@
 				0607363615C8E492001D00F7 /* PSMTabDragWindowController.m in Sources */,
 				0607363A15C8E4B7001D00F7 /* PSMMainWindowController.m in Sources */,
 				06E596D615C8F35400139EE3 /* TabInfo.m in Sources */,
+				09EFE2DB15CA2FBC002C0314 /* PSMAnyTabContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
