@@ -9,7 +9,6 @@
 #import "PSMMainWindowController.h"
 #import "PSMTabBarControl.h"
 #import "PSMRolloverButton.h"
-#import "PSMMetalTabStyle.h"
 #import "PSMAnyTabContentViewController.h"
 
 @implementation PSMMainWindowController
@@ -25,11 +24,11 @@
 - (void)windowDidLoad {
     [super windowDidLoad];
     
-    [self.tabBarControl setStyle:[[PSMMetalTabStyle alloc] init]];
+    //** PSMTabBarControl configuration
     [self.tabBarControl setShowAddTabButton:YES];
     [self.tabBarControl setUseOverflowMenu:YES];
-    [self.tabBarControl setAllowsScrubbing:NO];
     
+    //** Configure the addTabButton
     [[self.tabBarControl addTabButton] setTarget:self];
     [[self.tabBarControl addTabButton] setAction:@selector(addNewTab:)];
     
@@ -48,6 +47,9 @@
     [self.tabView selectTabViewItem:tabViewItem];
 }
 
+
+#pragma mark - Delegate that allows drag and drop
+
 - (BOOL)tabView:(NSTabView *)aTabView shouldDragTabViewItem:(NSTabViewItem *)tabViewItem fromTabBar:(PSMTabBarControl *)tabBarControl {
     return YES;
 }
@@ -59,10 +61,5 @@
 - (BOOL)tabView:(NSTabView *)aTabView shouldAllowTabViewItem:(NSTabViewItem *)tabViewItem toLeaveTabBar:(PSMTabBarControl *)tabBarControl {
     return YES;
 }
-
-- (void)tabView:(NSTabView*)aTabView didDropTabViewItem:(NSTabViewItem *)tabViewItem inTabBar:(PSMTabBarControl *)tabBarControl {
-    
-}
-
 
 @end
