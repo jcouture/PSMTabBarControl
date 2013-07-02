@@ -816,7 +816,7 @@
   }
   else
   {
-    [[[self window] animator] setFrame:NSMakeRect([[self window] frame].origin.x, partnerTargetOrigin, NSWidth([[self window] frame]), partnerTargetSize)];
+    [[[self window] animator] setFrame:NSMakeRect([[self window] frame].origin.x, partnerTargetOrigin, NSWidth([[self window] frame]), partnerTargetSize) display:YES];
   }
   
   [NSAnimationContext endGrouping];
