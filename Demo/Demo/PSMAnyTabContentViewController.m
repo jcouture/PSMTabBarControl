@@ -49,7 +49,7 @@
 }
 
 - (IBAction)markAsDirty:(id)sender {
-    if (self.markDirtyCheckbox.state = NSOnState) {
+    if (self.markDirtyCheckbox.state == NSOnState) {
         self.isEdited = YES;
     } else {
         self.isEdited = NO;
